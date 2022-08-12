@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --red: #ff0157 ;
+  }
+p{
+    font-weight: 300;
+    color: #111;
+}
+body{
+    min-height: 1000px;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+}
+.banner .content p{
+    font-size: 1em;
+    color: #fff;
+}
+.btn{
+    display: inline-block;
+    padding:8px 26px;
+    border:3px solid #ff0157;
+    color:#fff;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 8px;
+    background-color: #ff0157;
+    text-decoration: none;
+  }
+  
+  .btn::before{
+    content: '';
+    position: absolute;
+    top:0; right: 0;
+    width:0%;
+    height:50%;
+    
+    transition: .3s linear;
+    z-index: -1;
+  }
+  
+  .btn:hover::before{
+    width:50%;
+    left: 0;
+  }
+  
+  .btn:hover{
+    letter-spacing: 5px;
+  }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px  100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background-color: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,0.05);
+}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: #111;
+
+}
+header.sticky .logo{
+    color: #111;
+
+}
+header .logo span{
+    color: #ff0157;
+}
+header .navigation{
+    position: relative;
+    display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+header.sticky .navigation li a{
+    color: #111;
+}
+header .navigation li a:hover{
+    color: #ff0157;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/pexels-jonathan-borba-2983101.jpg); opacity: 95%;
+    background-size: cover;
+}
+.copyrighttext{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+.copyrighttext p{
+    color: #333;
+}
+.copyrighttext a{
+    color: #ff0157;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+ .text{
+    text-align: justify;
+} 
+.footer{
+    padding: 75px 25px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 100%px;
+    margin-top: 50px;
+    display: inline-flex;
+}
+.container{
+    margin: auto;
+    display: inline-flex;
+}
+ul{
+    list-style:none ;
+    
+}
+li a{
+    text-decoration: none;
+    color: #111;
+    display: inline-flex;
+}
+h4{
+    color: #ff0157;
+}
+a i{
+    color:#fff;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#111;
+    font-weight:400;
+    color: #3a3535;
+    display: block;
+    transition: all 0.3s ease;
+    display: inline;
+}
+.footer-col ul li a:hover{
+    color: rgb(5, 5, 5);
+    padding-left: 10px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(70, 65, 65);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #111;
+    transition: all 0.3s ease;
+}
+body{
+    min-height: 1000px;
+}
+.footer-col .social-links a:hover{
+    color: #3d3f42;
+    background-color: rgb(7, 7, 7);
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .footer-col{
+    /* width: 30%; */
+    padding:  0px 85px 75px;
+    
+} 
+.footer .row{
+    width: 100%;
+    padding:  0px;
+
+}
+.contact{
+    background: url(./IMAGES/bg3.jpg);
+    background-size: cover;
+}
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactform .inputbox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.contactform .inputbox input[type="submit"]:hover{
+    letter-spacing: 6px;
+}
+.titletext{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+}
+.titletext span{
+    color:#ff0157;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+p{
+    font-weight: 300;
+    color: #111;
+    text-align: center;
+
+}
+.popular .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .popular .box-container .box{
+    padding:18px;
+    background:#fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.1);
+    border:.8px solid rgba(0,0,0,.3);
+    border-radius: 6px;
+    text-align: center;
+     flex:1 1 300px; 
+    position: relative;
+  }
+  
+  .popular .box-container .box img{
+    height:200px;
+    object-fit: cover;
+    width:100%;
+    border-radius: 6px;
+  }
+  
+  .popular .box-container .box .price{
+    position: absolute;
+    top:26px; left:24px;
+    background:var(--red);
+    color:#fff;
+    font-size: 18px;
+    padding:6px 10px;
+    border-radius: 6px;
+  }
+  
+  .popular .box-container .box h3{
+    color:#333;
+    font-size: 22px;
+    padding-top: 10px;
+  }
+  
+  .popular .box-container .box .stars i{
+    color:gold;
+    font-size: 15;
+    padding:10px 10px;
+  }
+  .steps{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding:1rem;
+  }
+  
+  .steps .box{
+     flex:1 1 20px; 
+     padding:35px ;
+    text-align: center;
+  }
+  
+  .steps .box img{
+    border-radius: 50%;
+    border:1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  }
+  
+  .steps .box h3{
+    font-weight: 400;
+    color: #111;
+  }
+  .popular{
+      margin: 30px;
+      /* padding: 20px; */
+  }
+
+  @media (max-width: 991px)
+  {
+      header,
+      header.sticky
+      {
+          padding: 10px 20px;
+      }
+      header .navigation
+      {
+          display: none;
+      }
+      header .navigation.active
+      {
+          width: 100%;
+          height: calc(100% - 60px);
+          position: fixed;
+          top: 68px;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          background: #fff;
+      }
+      header .navigation li 
+      {
+          margin-left: 0;
+      }
+      header .navigation li a 
+      {
+          font-size: 1.6em;
+          line-height: 40px;
+          color: #111;
+      }
+      .menuToggle
+      {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          background: url(./images/menu.png);
+          background-size: 30px;
+          background-repeat: no-repeat;
+          background-position: center;
+          cursor: pointer;
+      }
+      .menuToggle.active
+      {
+          background: url(./images/close.png);
+          background-size: 25px;
+          background-repeat: no-repeat;
+          background-position: center; 
+      }
+      header.sticky .menuToggle
+      {
+          filter: invert(1);
+      }
+      section 
+      {
+          padding: 20px;
+      }
+      .banner .contact h2 
+      {
+          font-size: 3em;
+          color: #fff;
+      }
+      .menu .content
+    {
+        margin-top: 20px;
+    }
+    .menu .content .box
+    {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx
+    {
+        height: 260px;
+    }
+    .title
+    {
+        text-align: center;
+    } 
+    .titletext
+    {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .popular .box-container .box 
+    {
+        height: 375px;
+    }
+    .btn 
+    {
+        margin-left: 90px;
+    }
+  }
+
+  @media (max-width:480px)
+{
+    .banner .content h2 
+    {
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
